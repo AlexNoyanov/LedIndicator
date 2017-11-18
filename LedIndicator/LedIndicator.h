@@ -20,38 +20,38 @@
 
 class LedIndicator
 {
-    
 
 public:
-void One();
-void Two();
-void Three();
-void Four();
-void Five();
-void Six();
-void Seven();
-void Eight();
-void Nine();
-void Zero();
-void Off();
-void A();
-void b();
-void C();
-void d();
-void E();
-void f();
-void G();
-void P();
-void H();
-void J();
-void U();
-void L();
-void oUp();
-void oDn();
-void PinsOut();
-void PrintNum(int i);
+    void One();
+    void Two();
+    void Three();
+    void Four();
+    void Five();
+    void Six();
+    void Seven();
+    void Eight();
+    void Nine();
+    void Zero();
+    void Off();
+    void A();
+    void b();
+    void C();
+    void d();
+    void E();
+    void f();
+    void G();
+    void P();
+    void H();
+    void J();
+    void U();
+    void L();
+    void oUp();
+    void oDn();
+    void PinsOut();
+    void PrintNum(int i);
+
+
+};
 
 #endif /* defined(____LedIndicator__) */
 
-    };
-    
