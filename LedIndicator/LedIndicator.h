@@ -18,7 +18,11 @@
 #include "WProgram.h"
 #endif
 
+class LedIndicator
+{
+    
 
+public:
 void One();
 void Two();
 void Three();
@@ -49,3 +53,5 @@ void PrintNum(int i);
 
 #endif /* defined(____LedIndicator__) */
 
+    };
+    
