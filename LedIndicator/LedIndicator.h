@@ -49,6 +49,7 @@ public:
     void oDn();
     void PinsOut();
     void PrintNum(int i);
+    void begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up);   // To set up pins 
 
 
 };
