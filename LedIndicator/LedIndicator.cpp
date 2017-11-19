@@ -19,7 +19,7 @@ int up   = 13;
 
 // Functions:
 
-//  For setup new indicator:
+
 void LedIndicator::begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up){
     
     pinMode(Up,OUTPUT);
@@ -33,13 +33,13 @@ void LedIndicator::begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,i
 }
 
 // Numbers
-void One()
+void LedIndicator::One()
 {
     digitalWrite(rup,LOW);
     digitalWrite(rdwn,LOW);
 }
 
-void Two()
+void LedIndicator::Two()
 {
     digitalWrite(up,LOW);
     digitalWrite(rup,LOW);
@@ -48,7 +48,7 @@ void Two()
     digitalWrite(dwn,LOW);
 }
 
-void Three()
+void LedIndicator::Three()
 {
     digitalWrite(up,LOW);
     digitalWrite(rup,LOW);
@@ -56,43 +56,43 @@ void Three()
     digitalWrite(rdwn,LOW);
     digitalWrite(dwn,LOW);
 }
-void Four()
+void LedIndicator::Four()
 {
     digitalWrite(rup,LOW);
     digitalWrite(lup,LOW);
     digitalWrite(mdl,LOW);
     digitalWrite(rdwn,LOW);}
 
-void Five() {
+void LedIndicator::Five() {
     digitalWrite(up,LOW);
     digitalWrite(lup,LOW);
     digitalWrite(mdl,LOW);
     digitalWrite(rdwn,LOW);
     digitalWrite(dwn,LOW);
 }
-void Six() {
-    digitalWrite(up,LOW);
-    digitalWrite(lup,LOW);
-    digitalWrite(mdl,LOW);
-    digitalWrite(rdwn,LOW);
-    digitalWrite(ldwn,LOW);
-    digitalWrite(dwn,LOW);
-}
-void Seven() {
-    digitalWrite(rup,LOW);
-    digitalWrite(rdwn,LOW);
-    digitalWrite(up,LOW);
-}
-void Eight() {
+void LedIndicator::Six() {
     digitalWrite(up,LOW);
     digitalWrite(lup,LOW);
     digitalWrite(mdl,LOW);
     digitalWrite(rdwn,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(dwn,LOW);
+}
+void LedIndicator::Seven() {
+    digitalWrite(rup,LOW);
+    digitalWrite(rdwn,LOW);
+    digitalWrite(up,LOW);
+}
+void LedIndicator::Eight() {
+    digitalWrite(up,LOW);
+    digitalWrite(lup,LOW);
+    digitalWrite(mdl,LOW);
+    digitalWrite(rdwn,LOW);
+    digitalWrite(ldwn,LOW);
+    digitalWrite(dwn,LOW);
     digitalWrite(rup,LOW);
 }
-void Nine(){
+void LedIndicator::Nine(){
     digitalWrite(up,LOW);
     digitalWrite(lup,LOW);
     digitalWrite(mdl,LOW);
@@ -100,7 +100,7 @@ void Nine(){
     digitalWrite(dwn,LOW);
     digitalWrite(rup,LOW);
 }
-void Zero()
+void LedIndicator::Zero()
 {
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
@@ -110,7 +110,7 @@ void Zero()
     digitalWrite(up,LOW);
 }
 // For Symbols:
-void Off(){
+void LedIndicator::Off(){
     digitalWrite(rup,HIGH);
     digitalWrite(rdwn,HIGH);
     digitalWrite(mdl,HIGH);
@@ -119,7 +119,7 @@ void Off(){
     digitalWrite(up,HIGH);
     digitalWrite(dwn,HIGH);
         }
-void A(){
+void LedIndicator::A(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(rup,LOW);
@@ -127,28 +127,28 @@ void A(){
     digitalWrite(mdl,LOW);
     digitalWrite(up,LOW);
 }
-void b(){
+void LedIndicator::b(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(mdl,LOW);
     digitalWrite(dwn,LOW);
 }
 
-void C(){
+void LedIndicator::C(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(up,LOW);
     digitalWrite(dwn,LOW);
 }
 
-void d(){
+void LedIndicator::d(){
     digitalWrite(rup,LOW);
     digitalWrite(rdwn,LOW);
     digitalWrite(mdl,LOW);
     digitalWrite(dwn,LOW);
 }
 
-void E(){
+void LedIndicator::E(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(mdl,LOW);
@@ -156,14 +156,14 @@ void E(){
     digitalWrite(dwn,LOW);
 }
 
-void f(){
+void LedIndicator::f(){
     digitalWrite(up,LOW);
     digitalWrite(mdl,LOW);
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
 }
 
-void G(){
+void LedIndicator::G(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(up,LOW);
@@ -172,7 +172,7 @@ void G(){
     
 }
 
-void H(){
+void LedIndicator::H(){
     digitalWrite(rup,LOW);
     digitalWrite(rdwn,LOW);
     digitalWrite(mdl,LOW);
@@ -180,19 +180,19 @@ void H(){
     digitalWrite(ldwn,LOW);
 }
 
-void J(){
+void LedIndicator::J(){
     digitalWrite(rdwn,LOW);
     digitalWrite(rup,LOW);
     digitalWrite(dwn,LOW);
 }
 
-void L(){
+void LedIndicator::L(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(dwn,LOW);
 }
 
-void P(){
+void LedIndicator::P(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(up,LOW);
@@ -200,7 +200,7 @@ void P(){
     digitalWrite(rup,LOW);
 }
 
-void U(){
+void LedIndicator::U(){
     digitalWrite(lup,LOW);
     digitalWrite(ldwn,LOW);
     digitalWrite(rdwn,LOW);
@@ -208,21 +208,21 @@ void U(){
     digitalWrite(dwn,LOW);
 }
 
-void oUp(){
+void LedIndicator::oUp(){
     digitalWrite(lup,LOW);
     digitalWrite(up,LOW);
     digitalWrite(rup,LOW);
     digitalWrite(mdl,LOW);
 }
 
-void oDn(){
+void LedIndicator::oDn(){
     digitalWrite(ldwn,LOW);
     digitalWrite(dwn,LOW);
     digitalWrite(rdwn,LOW);
     digitalWrite(mdl,LOW);
 }
 // Set pins as OUTPUT
-void PinsOut(){
+void LedIndicator::PinsOut(){
     pinMode(up,OUTPUT);
     pinMode(mdl,OUTPUT);
     pinMode(dwn,OUTPUT);
@@ -233,7 +233,7 @@ void PinsOut(){
 }
 
 // Use this function for printing numbers:
-void LedIndicator::PrintNum(int i)
+void LedIndicator::LedIndicator::PrintNum(int i)
 {
         
         switch(i)
