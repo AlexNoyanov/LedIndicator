@@ -19,6 +19,19 @@ int up   = 13;
 
 // Functions:
 
+//  For setup new indicator:
+void LedIndicator::begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up){
+    
+    pinMode(Up,OUTPUT);
+    pinMode(Mdl,OUTPUT);
+    pinMode(Dwn,OUTPUT);
+    pinMode(Lup,OUTPUT);
+    pinMode(Ldwn,OUTPUT);
+    pinMode(Rup,OUTPUT);
+    pinMode(Rdwn,OUTPUT);
+
+}
+
 // Numbers
 void One()
 {
@@ -220,7 +233,7 @@ void PinsOut(){
 }
 
 // Use this function for printing numbers:
-void PrintNum(int i)
+void LedIndicator::PrintNum(int i)
 {
         
         switch(i)
