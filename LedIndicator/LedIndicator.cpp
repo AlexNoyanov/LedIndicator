@@ -19,8 +19,8 @@ int up   = 13;
 
 // Functions:
 
-
-void LedIndicator::begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up){
+    //                     Right UP  Right Down Down    Midle  Left UP  Left Down  UP
+void LedIndicator::begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Ldwn,int Up){
     
     pinMode(Up,OUTPUT);
     pinMode(Mdl,OUTPUT);
