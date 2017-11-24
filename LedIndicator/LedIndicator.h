@@ -6,6 +6,8 @@
 //  Mail: alex.noyanov@gmail.com
 //
 
+// All files is under GNU license
+
 #ifndef ____LedIndicator__
 #define ____LedIndicator__
 
@@ -50,7 +52,7 @@ public:
     // Small "o" or degree symbol:
     void oUp();
     void oDn();
-    // For setup and simple usage: 
+    // For setup and simple usage:
     void PinsOut();        // Set pins
     void PrintNum(int i);  // For printing numbers
     void setPins(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up);   // To set up pins

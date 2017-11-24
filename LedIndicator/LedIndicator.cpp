@@ -5,6 +5,8 @@
 //*************************************
 // Mail: alex.noyanov@gmail.com
 
+// All files is under GNU license
+
 // All functions from old library available for class LedIndicator
 
 #include "LedIndicator.h"
