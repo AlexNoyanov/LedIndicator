@@ -233,7 +233,7 @@ void LedIndicator::PinsOut(){
 }
 
 // Use this function for printing numbers:
-void LedIndicator::LedIndicator::PrintNum(int i)
+void LedIndicator::PrintNum(int i)
 {
         
         switch(i)

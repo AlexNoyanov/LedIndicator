@@ -1,79 +1,29 @@
-//  =========================
-//  Countdown
-//  Created by Alex Noyanov
-//  20 May 2016
-//  Connect Button on 3 pin
-//  =========================
-//   Mail: alex.noyanov@gmail.com
-/*    7-SEGMENT INDICATOR 
- *     CONNECTING SCHEME:     
- *    _______________
- *  /_______________/| /5V
- * |    <=====>    | |/
- * |   ^   UP  ^   | | 
- * |LUP|       |RUP| |
- * |   v  MDL  v   | | 
- * |    <=====>    | |
- * |   ^       ^   | |
- * |LDN|       |RDN| |
- * |   v  DWN  v   | |
- * |    <=====> O  | |
- * |_______________|/
- *    
- *    
- * (Better use Resistors!)
- *  CONNECT PINS 
- *  TO THE SEGMENTS:
- *    UP  --> 13
- *    MDL --> 7
- *    DWN --> 4
- *    LUP --> 12
- *    LDN --> 11
- *    RUP --> 6
- *    RDN --> 5
- *    
- *    
- *    SEGMENT | PIN
- *    --------|-----
- *        A   | 13
- *        B   | 6
- *        C   | 5
- *        D   | 4
- *        E   | 11
- *        F   | 12
- *        G   | 7
- *    
- *    
- *    OTHER SYMBOLS: A,C,E,F,G,H,I(use1),O(use0),L,P
- *    1,2,3,4,5,6,7,8,9,0
- */
-// Library:
-#include<LedIndicator.h>
 
-// Speed:
-int spd = 500;
-//Connect button on this pin
-int buttonPin = 3;
+//  === Countdown example#1 ===
+//    Uses class LedIndicator
+
+//  Created by Alexander Noyanov
+//  On November 25 2017
+
+// Mail: alex.noyanov@gmail.com
+
+#include <LedIndicator.h> // Library
+
+LedIndicator myIndicator; // Create myIndicator
 
 void setup() {
-// Make indicator pins in OUTPUT mode:
-PinsOut();
-// Buton pin mode:
-pinMode(buttonPin,OUTPUT);
-// Turn OFF all segments:
-Off();
+  // put your setup code here, to run once:
+  myIndicator.begin(6,7,8,9,10,11,12);  // Choose pins
+
 }
+
 void loop() {
-  // Countdown if button pressed:
-if(digitalRead(buttonPin)==HIGH){
-// Let's print all numbers:
-for(int n=9;n>=0;n--){
-  PrintNum(n); // Print number 
-delay(spd);    // Waitind 
-Off();         // Turn Off
-delay(spd);
-   }
-  }else{
-    Off();
+  // put your main code here, to run repeatedly:
+
+//  Countdown:
+  for(int i = 0; i < 9;i++){
+    myIndicator.PrintNum(i);  // Print number
+    delay(1000);              // time delay
   }
- }
+
+}
