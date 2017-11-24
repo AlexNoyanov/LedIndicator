@@ -5,8 +5,9 @@
 //*************************************
 // Mail: alex.noyanov@gmail.com
 
-#include "LedIndicator.h"
+// All functions from old library available for class LedIndicator
 
+#include "LedIndicator.h"
 
 //  Pins:
 int rup  = 6;
@@ -20,7 +21,7 @@ int up   = 13;
 // Functions:
 
     //                     Right UP  Right Down Down    Midle  Left UP  Left Down  UP
-void LedIndicator::begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Ldwn,int Up){
+void LedIndicator::setPins(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Ldwn,int Up){
     
     pinMode(Up,OUTPUT);
     pinMode(Mdl,OUTPUT);

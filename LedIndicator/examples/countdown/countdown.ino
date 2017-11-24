@@ -13,7 +13,7 @@ LedIndicator myIndicator; // Create myIndicator
 
 void setup() {
   // put your setup code here, to run once:
-  myIndicator.begin(6,7,8,9,10,11,12);  // Choose pins
+  myIndicator.setPins(6,7,8,9,10,11,12);  // Choose pins
 
 }
 

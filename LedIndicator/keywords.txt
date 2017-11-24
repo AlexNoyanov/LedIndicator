@@ -29,6 +29,7 @@ G	      	 	KEYWORD2
 J	      	 	KEYWORD2
 Off	      	 	KEYWORD2
 PrintNum     	 	KEYWORD2
+setPins			KEYWORD2
 
 
 #######################################

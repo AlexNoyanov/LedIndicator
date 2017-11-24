@@ -22,6 +22,7 @@ class LedIndicator
 {
 
 public:
+    // Numbers:
     void One();
     void Two();
     void Three();
@@ -33,6 +34,7 @@ public:
     void Nine();
     void Zero();
     void Off();
+    // Letters:
     void A();
     void b();
     void C();
@@ -45,13 +47,13 @@ public:
     void J();
     void U();
     void L();
+    // Small "o" or degree symbol:
     void oUp();
     void oDn();
-    void PinsOut();
-    void PrintNum(int i);
-    void begin(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up);   // To set up pins
-
-
+    // For setup and simple usage: 
+    void PinsOut();        // Set pins
+    void PrintNum(int i);  // For printing numbers
+    void setPins(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up);   // To set up pins
 };
 
 #endif /* defined(____LedIndicator__) */
