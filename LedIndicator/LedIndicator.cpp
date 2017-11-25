@@ -1,3 +1,4 @@
+
 //*************************************
 //  LedIndicator.cpp
 //  7-Segments LED-indicator libriary
@@ -22,7 +23,7 @@ int up   = 13;
 
 // Functions:
 
-    //                     Right UP  Right Down Down    Midle  Left UP  Left Down  UP
+                       //  Right UP  Right Down Down    Midle  Left UP  Left Down  UP
 void LedIndicator::setPins(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Ldwn,int Up){
     
     pinMode(Up,OUTPUT);
