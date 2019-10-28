@@ -239,7 +239,7 @@ void LedIndicator::PinsOut(){
 // Use this function for printing numbers:
 void LedIndicator::PrintNum(int i)
 {
-        
+
         switch(i)
         {
             case 0: Zero();break;
@@ -253,6 +253,4 @@ void LedIndicator::PrintNum(int i)
             case 8: Eight();break;
             case 9: Nine();break;
         }
-    
-
 }

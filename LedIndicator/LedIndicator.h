@@ -13,7 +13,6 @@
 
 //#include <iostream>
 
-
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
 #else
@@ -53,7 +52,8 @@ public:
     void oUp();
     void oDn();
     // For setup and simple usage:
-    void PinsOut();        // Set pins
+    //void PinsOut();        // Set pins (older version)
+   // void setup();          // Setup indicator
     void PrintNum(int i);  // For printing numbers
     void setPins(int Rup , int Rdwn, int Dwn,int Mdl, int Lup,int Lwnd,int Up);   // To set up pins
 };
